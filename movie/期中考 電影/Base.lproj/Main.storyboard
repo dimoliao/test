@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="s3I-17-IJd">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="0TG-nn-jOG">
+            <objects>
+                <tabBarController id="s3I-17-IJd" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="shD-tP-Ufx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Gv6-12-sKy" kind="relationship" relationship="viewControllers" id="w9g-oy-Non"/>
+                        <segue destination="Wlg-JW-aeF" kind="relationship" relationship="viewControllers" id="07K-EB-OGi"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t7w-C1-H5w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-919.5" y="459.5"/>
+        </scene>
+        <!--本週新片-->
+        <scene sceneID="mVE-AT-zmx">
+            <objects>
+                <tableViewController title="本週新片" id="MKk-Ff-0Up" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="OED-QS-tiX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="Jes-aR-skd">
+                            <rect key="frame" x="0.0" y="387" width="375" height="0.0"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <sections>
+                            <tableViewSection id="WJ7-nQ-RiO">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="M1" rowHeight="157" id="dqv-49-Xp7" userLabel="M1">
+                                        <rect key="frame" x="0.0" y="64" width="375" height="157"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dqv-49-Xp7" id="SLh-JE-Uwl">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="156.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="腦筋急轉彎" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0A-U6-Yrp">
+                                                    <rect key="frame" x="164" y="13" width="85" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="腦筋急轉彎" translatesAutoresizingMaskIntoConstraints="NO" id="lbC-a5-4Mf">
+                                                    <rect key="frame" x="8" y="5" width="134" height="144"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="上映日期：2015-13-13" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzh-Fr-uRm">
+                                                    <rect key="frame" x="164" y="121" width="174" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.80000001192092896" green="0.80000001192092896" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="9zi-b7-1HI" kind="push" id="8jZ-29-R7B"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="M2" rowHeight="166" id="NKF-ls-cJE" userLabel="M2">
+                                        <rect key="frame" x="0.0" y="221" width="375" height="166"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NKF-ls-cJE" id="AWC-O6-nSi">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="165.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="玩具總動員三" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VrO-dD-GAp">
+                                                    <rect key="frame" x="160" y="18" width="102" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="玩具總動員三" translatesAutoresizingMaskIntoConstraints="NO" id="qxt-17-LmC">
+                                                    <rect key="frame" x="8" y="8" width="135" height="148"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="上映日期：2016-1-1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Dg-Yy-9UP">
+                                                    <rect key="frame" x="188" y="129" width="154" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.80000001192092896" green="0.80000001192092896" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="qH6-JP-42B" kind="push" id="m7L-hv-qi7"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="MKk-Ff-0Up" id="TdW-Te-SSL"/>
+                            <outlet property="delegate" destination="MKk-Ff-0Up" id="tS6-2s-b7Z"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="電影" id="sjh-8W-B9z"/>
+                    <navigationItem key="navigationItem" title="本週新片" id="coX-hD-4wY"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lhz-Ra-Yhi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="567.1875" y="106.16197183098591"/>
+        </scene>
+        <!--電影-->
+        <scene sceneID="MHV-LG-5qU">
+            <objects>
+                <navigationController id="Gv6-12-sKy" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="電影" id="YV9-bq-OkV"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vX8-kD-azl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="MKk-Ff-0Up" kind="relationship" relationship="rootViewController" id="zJA-rw-CRb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ABV-He-4yg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-149.0625" y="203.3450704225352"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gQe-Xl-NZl">
+            <objects>
+                <viewController id="qH6-JP-42B" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mfI-ve-kym"/>
+                        <viewControllerLayoutGuide type="bottom" id="e2w-SW-X1X"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uX3-kg-wec">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YDq-ee-oIv">
+                                <rect key="frame" x="16" y="64" width="343" height="534"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpG-Co-73x">
+                                        <rect key="frame" x="43" y="297" width="300" height="771"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="Pm1-gs-cZK"/>
+                                            <constraint firstAttribute="width" constant="300" id="s5f-fm-BTD"/>
+                                        </constraints>
+                                        <mutableString key="text">主角萊莉（Riley）出生於美國明尼蘇達州，在她腦中有五種情緒表現形式：快樂、憂愁、厭惡、恐懼和憤怒。各情緒在萊莉的大腦總部中透過一個控制台影響萊莉的動作和記憶。新記憶被儲存在彩色水晶球內，在每個清醒周期後被送往儲存。最重要的核心記憶存放在總部樞紐，各維持一個塑造萊莉性格的個性島嶼。掌管快樂情緒的樂樂（Joy）作為情緒主導，讓萊莉保持愉快，但她和其他情緒均不了解掌管憂愁情緒的憂憂（Sadness）的用處。
+
+萊莉11歲時父親覓得新工作，舉家遷往舊金山，然而是次經歷對萊莉而言並不愉快。在萊莉首天到新學校上學時，憂憂觸碰了快樂的核心記憶使之成為傷心回憶，導致萊莉在班上落淚，事件成了一個悲傷的核心記憶。樂樂欲在該記憶到達總部樞紐前將之除去，但她在與憂憂的爭執中使其餘一眾核心記憶摔落，各個性島嶼因而失去穩定性。各記憶與樂樂和憂憂被記憶管道吸出總部，落在萊莉長期記憶的迷宮存儲區。在樂樂與憂憂設法返回大腦總部時，萊莉的情緒由掌管憤怒的怒怒（Anger）、掌管憎厭的厭厭（Disgust）、以及掌管恐懼的驚驚（Fear）維持。
+
+怒怒、厭厭和驚驚使萊莉與父母和朋友的關係惡化，以及失去對嗜好的興趣，其個性島嶼逐一碎裂，落入一切記憶將被遺忘的記憶垃圾場。為產生新的快樂核心記憶，怒怒在控制台植入返回明尼蘇達州的想法，同時樂樂及憂憂遇上萊莉兒時的幻想朋友小彬彬（Bing Bong），小彬彬指出可以乘坐思路列車返回大腦總部。在探索</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="s5f-fm-BTD"/>
+                                            </mask>
+                                        </variation>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="玩具總動員三" translatesAutoresizingMaskIntoConstraints="NO" id="FLs-em-lgg">
+                                        <rect key="frame" x="81" y="24" width="200" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="UUK-Kt-1iw"/>
+                                            <constraint firstAttribute="width" constant="200" id="ce4-0Q-gww"/>
+                                            <constraint firstAttribute="height" constant="20" id="ph5-k1-UmJ"/>
+                                            <constraint firstAttribute="width" constant="200" id="qU1-F6-tBZ"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="rDb-qg-sQ7"/>
+                                            <constraint firstAttribute="width" constant="200" id="unA-ZZ-gxS"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="ph5-k1-UmJ"/>
+                                                <exclude reference="qU1-F6-tBZ"/>
+                                                <exclude reference="rDb-qg-sQ7"/>
+                                                <exclude reference="unA-ZZ-gxS"/>
+                                            </mask>
+                                        </variation>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="mpG-Co-73x" firstAttribute="top" secondItem="FLs-em-lgg" secondAttribute="bottom" constant="18" id="6Z7-Ne-3M8"/>
+                                    <constraint firstItem="mpG-Co-73x" firstAttribute="centerX" secondItem="YDq-ee-oIv" secondAttribute="centerX" id="8Zh-je-5ds"/>
+                                    <constraint firstItem="FLs-em-lgg" firstAttribute="top" secondItem="YDq-ee-oIv" secondAttribute="top" constant="20" id="Laz-Re-6QV"/>
+                                    <constraint firstAttribute="trailing" secondItem="FLs-em-lgg" secondAttribute="trailing" constant="20" id="RNh-5C-Wwh"/>
+                                    <constraint firstAttribute="trailing" secondItem="mpG-Co-73x" secondAttribute="trailing" id="VHD-JT-EIr"/>
+                                    <constraint firstItem="FLs-em-lgg" firstAttribute="centerX" secondItem="YDq-ee-oIv" secondAttribute="centerX" id="eif-uP-gom"/>
+                                    <constraint firstAttribute="bottom" secondItem="mpG-Co-73x" secondAttribute="bottom" constant="20" id="gPM-ji-XDF"/>
+                                    <constraint firstItem="mpG-Co-73x" firstAttribute="bottom" secondItem="YDq-ee-oIv" secondAttribute="bottomMargin" constant="20" id="joT-ta-7bQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="FLs-em-lgg" secondAttribute="bottom" constant="360" id="syt-GJ-lYv"/>
+                                    <constraint firstAttribute="height" constant="541" id="u8C-Lb-ymq"/>
+                                    <constraint firstAttribute="trailing" secondItem="mpG-Co-73x" secondAttribute="trailing" id="vLC-ec-yF1"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="u8C-Lb-ymq"/>
+                                        <exclude reference="RNh-5C-Wwh"/>
+                                        <exclude reference="syt-GJ-lYv"/>
+                                        <exclude reference="joT-ta-7bQ"/>
+                                        <exclude reference="vLC-ec-yF1"/>
+                                    </mask>
+                                </variation>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YDq-ee-oIv" firstAttribute="top" secondItem="mfI-ve-kym" secondAttribute="bottom" id="Q8l-Zo-yus"/>
+                            <constraint firstItem="YDq-ee-oIv" firstAttribute="leading" secondItem="uX3-kg-wec" secondAttribute="leadingMargin" id="TGH-yg-WLR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YDq-ee-oIv" secondAttribute="trailing" id="eQa-TX-7zO"/>
+                            <constraint firstItem="e2w-SW-X1X" firstAttribute="top" secondItem="YDq-ee-oIv" secondAttribute="bottom" id="nuf-yY-CAQ"/>
+                            <constraint firstItem="e2w-SW-X1X" firstAttribute="top" secondItem="YDq-ee-oIv" secondAttribute="bottom" constant="20" id="oej-5K-LHG"/>
+                            <constraint firstItem="YDq-ee-oIv" firstAttribute="leading" secondItem="uX3-kg-wec" secondAttribute="leadingMargin" id="weU-bh-NbU"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="weU-bh-NbU"/>
+                                <exclude reference="nuf-yY-CAQ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="HKp-p4-5if"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FTj-ov-By6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1366.5" y="671.5"/>
+        </scene>
+        <!--簽名-->
+        <scene sceneID="Ag8-4d-ILM">
+            <objects>
+                <viewController id="Wlg-JW-aeF" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pzl-MH-1DT"/>
+                        <viewControllerLayoutGuide type="bottom" id="zE8-Ww-VAK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Z9u-08-zO0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4u1-q4-S2x">
+                                <rect key="frame" x="227" y="70" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="enter:" destination="Wlg-JW-aeF" eventType="touchUpInside" id="a50-0X-c7C"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="123" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVn-Xs-W0f">
+                                <rect key="frame" x="49" y="129" width="224" height="163"/>
+                                <color key="backgroundColor" red="0.40000000596046448" green="1" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NzQ-Ik-EDd">
+                                <rect key="frame" x="49" y="306" width="153" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3xe-TX-zET">
+                                <rect key="frame" x="49" y="70" width="136" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="簽名" id="0bi-Q7-QM9"/>
+                    <connections>
+                        <outlet property="label" destination="aVn-Xs-W0f" id="Ip1-Ns-cg0"/>
+                        <outlet property="label2" destination="NzQ-Ik-EDd" id="hw7-yd-KtF"/>
+                        <outlet property="name" destination="3xe-TX-zET" id="yjt-Eu-9zX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rB3-bq-qYo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-374.5" y="954.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="3WG-1r-JRE">
+            <objects>
+                <viewController id="9zi-b7-1HI" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UFs-0v-9so"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZeQ-mB-DEo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Y2i-sc-Lxv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3mt-L2-FJY">
+                                <rect key="frame" x="20" y="81" width="341" height="524"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="腦筋急轉彎" translatesAutoresizingMaskIntoConstraints="NO" id="mrY-bd-Ar6">
+                                        <rect key="frame" x="56" y="13" width="229" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="Ko6-O8-4nb"/>
+                                            <constraint firstAttribute="width" constant="200" id="Rzg-3X-OWd"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rFV-Hy-ebP">
+                                        <rect key="frame" x="20" y="227" width="300" height="274"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="DQo-NN-JYa"/>
+                                            <constraint firstAttribute="width" constant="300" id="bqR-zL-E1o"/>
+                                            <constraint firstAttribute="height" constant="128" id="fS7-yS-Lag"/>
+                                        </constraints>
+                                        <mutableString key="text">皮克斯年度作品《腦筋急轉彎》將帶領觀眾探索掌控我們喜怒哀樂的大腦的神秘世界。由《怪獸電力公司》的導演彼特達克特執導，故事的起源是來自導演的女兒，當時製作《怪獸電力公司》時，可愛的阿布就是以她為藍本，但經過十幾年，女兒已經進入叛逆的青春期，不再是那個時常笑口常開的小女孩。所以導演將大腦擬人化，大腦中所有負責感官的神經細胞都有人在負責傳輸訊息給人類的肢體，而且人到青春期時，都會經歷一段負責掌控「歡樂」與「憂傷」兩種情緒的負責人離家出走的狀況，導致情緒大亂… 
+
+主角萊莉因為父親工作的因素舉家搬遷至舊金山，要準備適應新環境，但就在此時，萊莉腦中控制歡樂與憂傷的兩位腦內大臣樂樂與憂憂迷失在茫茫腦海中，大腦總部只剩下掌管憤怒、害怕與厭惡的三位幹部負責，導致本來樂觀的萊莉變成憤世忌俗少女。樂樂與憂憂必須要盡快在複雜的腦中世界回到大腦總部，讓萊莉重拾原本快樂正常的情緒…</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="fS7-yS-Lag"/>
+                                            </mask>
+                                        </variation>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="341" id="7N0-zz-178"/>
+                                    <constraint firstItem="rFV-Hy-ebP" firstAttribute="leading" secondItem="3mt-L2-FJY" secondAttribute="leading" constant="46" id="Dkj-6z-TJo"/>
+                                    <constraint firstItem="rFV-Hy-ebP" firstAttribute="centerX" secondItem="3mt-L2-FJY" secondAttribute="centerX" id="Jrp-Dn-giZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="rFV-Hy-ebP" secondAttribute="bottom" constant="23" id="Uw0-Wf-Rgv"/>
+                                    <constraint firstItem="mrY-bd-Ar6" firstAttribute="centerX" secondItem="3mt-L2-FJY" secondAttribute="centerX" id="WUF-4w-Gr6"/>
+                                    <constraint firstItem="mrY-bd-Ar6" firstAttribute="leading" secondItem="3mt-L2-FJY" secondAttribute="leading" constant="56" id="XwS-Yh-hOh"/>
+                                    <constraint firstAttribute="bottom" secondItem="rFV-Hy-ebP" secondAttribute="bottom" constant="10" id="ZPc-e1-JcM"/>
+                                    <constraint firstItem="mrY-bd-Ar6" firstAttribute="centerX" secondItem="rFV-Hy-ebP" secondAttribute="centerX" id="dmY-99-vR8"/>
+                                    <constraint firstItem="rFV-Hy-ebP" firstAttribute="top" secondItem="mrY-bd-Ar6" secondAttribute="bottom" constant="14" id="gae-cd-tVq"/>
+                                    <constraint firstItem="mrY-bd-Ar6" firstAttribute="top" secondItem="3mt-L2-FJY" secondAttribute="top" constant="13" id="isI-p4-RgF"/>
+                                    <constraint firstAttribute="bottom" secondItem="rFV-Hy-ebP" secondAttribute="bottom" id="mmv-W2-c8H"/>
+                                    <constraint firstAttribute="height" constant="524" id="n5A-sO-Rvn"/>
+                                    <constraint firstAttribute="trailing" secondItem="rFV-Hy-ebP" secondAttribute="trailing" id="rxF-pU-utJ"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="7N0-zz-178"/>
+                                        <exclude reference="n5A-sO-Rvn"/>
+                                        <exclude reference="XwS-Yh-hOh"/>
+                                        <exclude reference="dmY-99-vR8"/>
+                                        <exclude reference="Dkj-6z-TJo"/>
+                                        <exclude reference="ZPc-e1-JcM"/>
+                                        <exclude reference="mmv-W2-c8H"/>
+                                    </mask>
+                                </variation>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3mt-L2-FJY" firstAttribute="leading" secondItem="Y2i-sc-Lxv" secondAttribute="leadingMargin" constant="4" id="9Va-yP-Gg6"/>
+                            <constraint firstItem="3mt-L2-FJY" firstAttribute="leading" secondItem="Y2i-sc-Lxv" secondAttribute="leadingMargin" id="b9N-Gq-FM1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3mt-L2-FJY" secondAttribute="trailing" constant="-2" id="fhD-ic-XbD"/>
+                            <constraint firstItem="3mt-L2-FJY" firstAttribute="top" secondItem="UFs-0v-9so" secondAttribute="bottom" constant="17" id="r8J-bh-vwk"/>
+                            <constraint firstItem="3mt-L2-FJY" firstAttribute="top" secondItem="UFs-0v-9so" secondAttribute="bottom" constant="17" id="sTi-3U-Bj8"/>
+                            <constraint firstItem="ZeQ-mB-DEo" firstAttribute="top" secondItem="3mt-L2-FJY" secondAttribute="bottom" constant="13" id="y9H-7k-0Kw"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="b9N-Gq-FM1"/>
+                                <exclude reference="sTi-3U-Bj8"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="dAq-1w-56O"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s2n-JV-1nd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1163.5" y="2.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="玩具總動員三" width="768" height="1136"/>
+        <image name="腦筋急轉彎" width="526" height="750"/>
+    </resources>
+</document>
